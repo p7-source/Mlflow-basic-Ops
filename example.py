@@ -5,7 +5,8 @@
 import os
 import warnings
 import sys
-
+import dagshub
+dagshub.init(repo_owner='p7-source', repo_name='Mlflow-basic-Ops', mlflow=True)
 import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -13,6 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 from urllib.parse import urlparse
 import mlflow
+
 from mlflow.models.signature import infer_signature
 import mlflow.sklearn
 
@@ -74,6 +76,7 @@ if __name__ == "__main__":
         mlflow.log_metric("rmse", rmse)
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
+        
 
         predictions = lr.predict(train_x)
         signature = infer_signature(train_x, predictions)
