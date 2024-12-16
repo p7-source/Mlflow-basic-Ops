@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/prass/OneDrive/Desktop/MLFlow_test/mlflow_proj/mlruns/0/0e99a99ea3404f8a84a6d23b74c0b06a/artifacts
+end_time: 1734385290505
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e99a99ea3404f8a84a6d23b74c0b06a
+run_name: brawny-perch-391
+run_uuid: 0e99a99ea3404f8a84a6d23b74c0b06a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734385284125
+status: 3
+tags: []
+user_id: prass
